@@ -1,0 +1,43 @@
+.isHidden {
+    display: none;
+}
+
+.supportText {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.donationOptions {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cardDonation {
+    margin-right: 200px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #397c2e;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.paypalDonation {
+    margin-right: 200px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #397c2e;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.smallInputs {
+    width: 85px;
+}
