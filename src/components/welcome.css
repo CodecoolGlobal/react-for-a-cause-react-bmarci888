@@ -1,0 +1,65 @@
+.welcomeConatiner {
+  width: 100%;
+  position: relative;
+}
+
+.welcomeConatiner img {
+  display: block;
+  width: 100%;
+}
+
+.welcomeImageContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.welcomeConatiner p {
+  position: absolute;
+  top: 26%;
+  left: 28%;
+  font-family: 'Caveat';
+  font-size: 2.5vw;
+  color: white;
+}
+
+.welcomeConatiner a {
+  background: linear-gradient(
+    rgba(186, 104, 70, 1) 0%,
+    rgba(121, 54, 26, 1) 80%,
+    rgba(121, 54, 26, 1) 100%
+  );
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  padding: 10px 20px 5px 20px;
+  border-radius: 6px;
+  border: 1px solid black;
+  text-decoration: none;
+  font-size: 1.75vw;
+  color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  .welcomeConatiner img {
+    width: 1000px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .welcomeConatiner p {
+    font-size: 25px;
+    top: 23%;
+    left: unset;
+    margin: 0 29%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .welcomeConatiner a {
+    font-size: 14px;
+    top: unset;
+    bottom: 20%;
+    left: 0;
+    margin: 0 40%;
+  }
+}
