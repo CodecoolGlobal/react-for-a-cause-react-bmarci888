@@ -20,7 +20,7 @@ export default function Donation() {
         <div className="supportContainer">
             <div className="supportText">
                 <h1 className="supportTitle">Support Us!</h1>
-                <p>The ongoing support of individuals, like you, makes it possible for the Green Belt Movement to continue its core work of engaging women in planting trees, protecting critical forests & watersheds, and empowering communities.
+                <p className="supportText">The ongoing support of individuals, like you, makes it possible for the Green Belt Movement to continue its core work of engaging women in planting trees, protecting critical forests & watersheds, and empowering communities.
                     Your support helps to conserve soil and ensure food security, to sustain rural community’s livelihoods, and build resilience to climate change.
                     It also enables us to develop the tools to reach out and inspire people in Kenya, and around the world to take action in support of good governance, environmental sustainability, and the expansion of democratic space.
                     We hope you will invest in our work as we transform lives.</p>
