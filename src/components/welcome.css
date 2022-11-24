@@ -23,20 +23,14 @@
 }
 
 .welcomeConatiner a {
-  /*background: linear-gradient(rgba(186, 104, 70, 1) 0%,
-      rgba(121, 54, 26, 1) 80%,
-      rgba(121, 54, 26, 1) 100%);*/
   border-bottom: 4px solid white;
   position: absolute;
   top: 50%;
   left: 47%;
   padding: 10px 20px 5px 20px;
   border-radius: 6px;
-  /*border: 1px solid black;*/
   text-decoration: none;
-  /*font-size: 1.75vw;*/
   font-size: 3vw;
-  /*color: black;*/
   color: white;
 }
 

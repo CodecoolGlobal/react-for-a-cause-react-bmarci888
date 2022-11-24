@@ -12,7 +12,7 @@ const WelcomeSection = () => {
         <br />
         by Wangari Maathai
       </p>
-      <a href="#donate">Donate</a>
+      <a href="#donation">Donate</a>
     </div>
   );
 };

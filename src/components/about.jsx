@@ -4,8 +4,6 @@ import ourMissionImg from '../assets/our-mission.jpg';
 import ourValuesImg from '../assets/our-values.jpg';
 import './about.css';
 
-import { motion } from 'framer-motion';
-
 const content = [
   {
     image: whoWeAreImg,
@@ -59,30 +57,18 @@ const AboutItem = ({ src, title, text, direction }) => {
     ) : (
       <ul>
         {text.map((each) => (
-          <li>{each}</li>
+          <li key={each}>{each}</li>
         ))}
       </ul>
     );
 
   return (
     <div className={`aboutItemContainer ${direction}`}>
-      <motion.img
-        initial={{ opacity: 0, x: direction === 'left' ? -500 : 500 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-        src={src}
-        alt={title}
-      />
-      <motion.div
-        initial={{ opacity: 0, x: direction === 'left' ? 500 : -500 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-      >
+      <img src={src} alt={title} />
+      <div>
         <SubTitle text={title} />
         {TextArea()}
-      </motion.div>
+      </div>
     </div>
   );
 };
