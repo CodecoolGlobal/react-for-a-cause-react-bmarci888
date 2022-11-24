@@ -28,6 +28,10 @@
   text-align: left;
 }
 
+.aboutItemContainer:last-of-type {
+  margin-bottom: unset;
+}
+
 .aboutItemContainer:last-of-type div {
   margin-left: 5vw;
 }

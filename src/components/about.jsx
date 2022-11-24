@@ -3,7 +3,6 @@ import ourVisionImg from '../assets/our-vision.jpg';
 import ourMissionImg from '../assets/our-mission.jpg';
 import ourValuesImg from '../assets/our-values.jpg';
 import './about.css';
-import { useMemo } from 'react';
 
 const content = [
   {
@@ -52,25 +51,23 @@ const About = () => {
 };
 
 const AboutItem = ({ src, title, text, direction }) => {
-  const TextArea = useMemo(
-    () =>
-      typeof text === 'string' ? (
-        <p>{text}</p>
-      ) : (
-        <ul>
-          {text.map((each) => (
-            <li>{each}</li>
-          ))}
-        </ul>
-      ),
-    [text]
-  );
+  const TextArea = () =>
+    typeof text === 'string' ? (
+      <p>{text}</p>
+    ) : (
+      <ul>
+        {text.map((each) => (
+          <li key={each}>{each}</li>
+        ))}
+      </ul>
+    );
+
   return (
     <div className={`aboutItemContainer ${direction}`}>
       <img src={src} alt={title} />
       <div>
         <SubTitle text={title} />
-        {TextArea}
+        {TextArea()}
       </div>
     </div>
   );
