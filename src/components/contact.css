@@ -1,0 +1,98 @@
+.contactHr {
+    margin: 0 25% 5vw 25%;
+    border-bottom: 2px solid #bb8b27;
+    margin-top: 5vw;
+  }
+
+.cardSubmit {
+    display: flex;
+    height: 500px;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #397c2e;
+    border-radius: 10px;
+}
+
+.contactContainer {
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: row;
+    gap: 550px;
+    margin-top: 5vw;
+}
+
+.allInp {
+    background-color: #e0f5bd;
+}
+
+.cImage {
+    height: 500px;
+    width: 700px;
+    border-radius: 10px;
+}
+.cImage2 {
+    height: 500px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.cImage3 {
+    height: 500px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.cImage4 {
+    height: 500px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.contactAdd{
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 550px;
+    margin-top: 5vw;
+}
+
+
+.contactAdd2{
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 550px;
+    margin-top: 5vw;
+}
+
+.contactAdd3{
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 550px;
+    margin-top: 5vw;
+    
+}
+
+.button{
+    background-color: #bb8b27;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: white;
+    font-family: 'Marhey';
+    font-size: 17px;
+
+}
+
+.thankY{
+    margin-top: 5vw;
+}
