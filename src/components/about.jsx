@@ -3,7 +3,8 @@ import ourVisionImg from '../assets/our-vision.jpg';
 import ourMissionImg from '../assets/our-mission.jpg';
 import ourValuesImg from '../assets/our-values.jpg';
 import './about.css';
-import { useMemo } from 'react';
+
+import { motion } from 'framer-motion';
 
 const content = [
   {
@@ -52,26 +53,36 @@ const About = () => {
 };
 
 const AboutItem = ({ src, title, text, direction }) => {
-  const TextArea = useMemo(
-    () =>
-      typeof text === 'string' ? (
-        <p>{text}</p>
-      ) : (
-        <ul>
-          {text.map((each) => (
-            <li>{each}</li>
-          ))}
-        </ul>
-      ),
-    [text]
-  );
+  const TextArea = () =>
+    typeof text === 'string' ? (
+      <p>{text}</p>
+    ) : (
+      <ul>
+        {text.map((each) => (
+          <li>{each}</li>
+        ))}
+      </ul>
+    );
+
   return (
     <div className={`aboutItemContainer ${direction}`}>
-      <img src={src} alt={title} />
-      <div>
+      <motion.img
+        initial={{ opacity: 0, x: direction === 'left' ? -500 : 500 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        src={src}
+        alt={title}
+      />
+      <motion.div
+        initial={{ opacity: 0, x: direction === 'left' ? 500 : -500 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+      >
         <SubTitle text={title} />
-        {TextArea}
-      </div>
+        {TextArea()}
+      </motion.div>
     </div>
   );
 };
