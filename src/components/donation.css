@@ -16,7 +16,7 @@
 .supportContainer h1 {
   margin-block-end: unset;
   margin-top: 5vw;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
 }
 
 .donationOptions {
@@ -47,7 +47,7 @@
 }
 
 .image {
-  height: 391px;
+  /* height: 391px; */
   width: 561px;
   border-radius: 10px;
 }
@@ -96,8 +96,14 @@
   }
 
   .image {
-    height: 300px;
+    /* height: 300px; */
     width: 450px;
     border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image {
+    width: 335px;
   }
 }

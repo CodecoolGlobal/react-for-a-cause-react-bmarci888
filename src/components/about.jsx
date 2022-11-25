@@ -1,4 +1,4 @@
-import whoWeAreImg from '../assets/who-we-are.jpg';
+import whoWeAreImg from '../assets/logo.jpg';
 import ourVisionImg from '../assets/our-vision.jpg';
 import ourMissionImg from '../assets/our-mission.jpg';
 import ourValuesImg from '../assets/our-values.jpg';

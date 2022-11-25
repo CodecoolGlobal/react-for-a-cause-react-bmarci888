@@ -8,6 +8,11 @@
   border-radius: 10px;
 }
 
+.cardSubmit label {
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
 .contactContainer {
   margin: 0 10vw;
   display: flex;

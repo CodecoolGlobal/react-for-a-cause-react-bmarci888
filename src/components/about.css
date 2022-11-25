@@ -8,7 +8,7 @@
 }
 
 .titleHr {
-  margin: 0 25% 10vw 25%;
+  margin: 0 25% 5vw 25%;
   border: 1px solid #bb8b27;
 }
 
@@ -18,6 +18,10 @@
   align-items: center;
   margin-bottom: 10vw;
   font-size: 18px;
+}
+
+.aboutContainer img {
+  max-width: 500px;
 }
 
 .aboutItemContainer p {
@@ -50,7 +54,6 @@
 
 .right img {
   margin-left: 80px;
-  max-width: 500px;
 }
 
 .subTitleHr {

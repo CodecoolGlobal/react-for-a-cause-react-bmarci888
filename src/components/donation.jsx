@@ -86,7 +86,7 @@ function DonationForm({ setIsDonated }) {
         <br />
         <label>
           Security Code:
-          <br /> <input className={'smallInputs allInputs'} />
+          <br /> <input className={'smallInputs allInputs'} type="password" />
         </label>
         <br />
         <label>
@@ -122,7 +122,7 @@ function PayPalForm({ setIsDonated }) {
 function Message({ setIsDonated }) {
   setTimeout(() => {
     setIsDonated(false);
-  }, 2000);
+  }, 5000);
   return (
     <div className="donationContainer">
       <div className="card">

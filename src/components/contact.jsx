@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './contact.css';
-import contactPicture2 from '../assets/contact_2.png';
 import contactPicture1 from '../assets/contact_1.png';
 import contactPicture3 from '../assets/contact_3.png';
 import contactPicture4 from '../assets/contact_4.png';
@@ -10,9 +9,7 @@ const ContactUs = () => {
 
   const handleSubmit = (values) => {
     setSubmitted(true);
-    console.log(
-      `FirstName: ${values.firstName} LastName: ${values.lastName} Email: ${values.email} Subject: ${values.subject} YourMessage: ${values.yourMessage}`
-    );
+    console.log(values);
   };
 
   return (

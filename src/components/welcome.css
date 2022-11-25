@@ -3,6 +3,12 @@
   position: relative;
 }
 
+.welcomeConatiner h1 {
+  position: absolute;
+  top: 5%;
+  left: 39%;
+}
+
 .welcomeConatiner img {
   display: block;
   width: 100%;
@@ -35,6 +41,11 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .welcomeConatiner h1 {
+    left: unset;
+    margin: 0 29%;
+  }
+
   .welcomeConatiner img {
     width: 1000px;
     margin-left: 50%;
@@ -50,6 +61,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .welcomeConatiner h1 {
+    top: 2%;
+    font-size: 23px;
+  }
   .welcomeConatiner a {
     font-size: 14px;
     top: unset;
