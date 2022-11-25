@@ -7,6 +7,7 @@ const WelcomeSection = () => {
       <div className="welcomeImageContainer">
         <img src={welcomeImg} alt="tree" />
       </div>
+      <h1>The Green Belt Movment</h1>
       <p>
         "When we plant trees, we plant the seeds of peace and hope"
         <br />
